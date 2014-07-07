@@ -1,0 +1,31 @@
+XenocruX:
+
+-GM website
+	-searches for all GM file identifiers on start (let's user choose if more than one)
+	-creates folder in GM's dropbox (using campaign name)
+		-file identifier to indicate this is a GM folder
+	-creates subfolders for each player and prompts GM to share them accordingly
+		-similar identifiers for players
+		-populates with the limited info that player possesses
+		-also contains url to player website
+	-page to generate star chart
+	-feature to inspect what a particular player's view would be
+	-responds to players actions that given turn
+		-text and possibly image response
+		-give player permission to view a particular star
+	-sets turn expiration time
+	-all data is redundantly kept in the main folder, so players can't destroy anything
+	
+-Player website
+	-searches for all player file identifiers on start (let's user choose if more than one)
+	-page to create species
+	-blog style timeline of past dialogue with GM, with the ability to create turn description
+		-each entry is a json file
+		
+-Star chart
+	-map of all stars
+	-json data for each with relevant data
+		-html contains dataless star div (with relevant sub tags)
+		-on star data load copy init star div and populate text for each "#"+star_id+" .key" selectors with value
+	-players given limited view based on their own exploration
+	
