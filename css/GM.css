@@ -1,0 +1,8 @@
+textarea {
+	display: inline-block;
+}
+#camp-name {
+	width: 500px;
+	margin: 0 auto;
+	resize: none;
+}

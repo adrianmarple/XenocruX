@@ -1,0 +1,117 @@
+html {
+	width: 100%;
+	height: 100%;
+	color: white;
+	text-align: center;
+	background-color: black;
+}
+body {
+	margin: 0;
+	top: 0;
+	width:100%;
+	height: 100%;
+}
+a:link {
+	color: white;
+}
+a:visited {
+	color: white;
+}
+.slide {
+	background-position: center;
+	background-size: cover;
+}
+#selectSlide, #newCampSlide {
+	background-image: url('https://dl.dropboxusercontent.com/spa/livq9q897y2xmiv/XenocruX/images/wallpaper.jpg');
+}
+
+.main-container {
+	width: 800px;
+	margin: 0 auto;
+	padding: 50px 0 100px;
+	min-height: 1000px;
+}
+.select {
+	width: 800px;
+	height: 200px;
+	line-height: 200px;
+	margin: 20px auto;
+	border: 2px solid white;
+	border-radius: 10px;
+	font-size: 36pt;
+	cursor: pointer;
+	background-color: black;
+	background-position: center;
+	background-size: cover;
+	letter-spacing: 5px;
+}
+.template {
+	display: none !important;
+}
+.logout {
+	width: 80px;
+	line-height: 30px;
+	font-size: 14pt;
+	position: fixed;
+	top: 0;
+	right: 0;
+	cursor: default;
+	border: 2px solid white;
+	border-top-width: 0;
+	border-right-width: 0;
+	background-color: black;
+}
+.logout:hover {
+	background-color: #444444;
+}
+.menu {
+	width: 100%;
+	float: left;
+}
+.refresh, .cancel, .balancer {
+	float: left;
+	width: 32px;
+	height: 32px;
+	margin: 2px;
+	background-position: center;
+	background-size: cover;
+	display: inline-block;
+	cursor: pointer;
+}
+.refresh {
+	background-image: url('https://dl.dropboxusercontent.com/spa/livq9q897y2xmiv/XenocruX/images/refresh.png')
+}
+.cancel {
+	background-image: url('https://dl.dropboxusercontent.com/spa/livq9q897y2xmiv/XenocruX/images/cancel.png')
+}
+.balancer {
+	float: right !important;
+}
+
+.image-chooser-handle {
+	border: 1px solid white;
+	margin: 20px;
+	cursor: pointer;
+}
+#image-chooser {
+	position: fixed;
+	top: 0;
+	left: 50%;
+	width: 70%;
+	height: 400px;
+	margin: 50px 0 0 -35%;
+	background-color: black;
+	border: 2px solid white;
+	display: none;
+}
+.image-thumb {
+	width: 128px;
+	height: 128px;
+	border: 1px solid white;
+	display: inline-block;
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin: 10px;
+	cursor: pointer;
+}

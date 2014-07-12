@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+<head>
+	<title>XenocruX</title>
+	<script src="//code.jquery.com/jquery.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/dropbox.js/0.10.2/dropbox.min.js"></script>
+	<script src="js/signin.js"></script>
+	<script src="js/slide.js"></script>
+	<script src="js/GM.js"></script>
+	<link rel="stylesheet" href="css/XenocruX.css" />
+	<link rel="stylesheet" href="css/slide.css" />
+	<link rel="stylesheet" href="css/GM.css" />
+	<link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+	</head>
+<body>
+	<div class="backdrop"></div>
+	<div class="slide default" id="loadingSlide">
+		<div class="main-container" style="font-size: 24pt">
+			Loading...
+		</div>
+	</div>
+	<div class="slide" id="selectSlide">
+		<div class="main-container">
+			<div class="select new-campaign">New Campaign</div>
+			<div class="select template"> </div>
+		</div>
+	</div>
+	<div class="slide" id="newCampSlide">
+		<div class="main-container">
+			<textarea placeholder="Campaign Name" id="camp-name"></textarea>
+		</div>
+	</div>
+	<div class="slide" id="campaignSlide">
+		<div class="logout">Logout</div>
+		<div class="main-container">
+			<div class="image-chooser-handle" id="campaign-chooser" key="image">Select Campaign Image</div>
+			<textarea placeholder="Add Player" id="camp-name"></textarea>
+		</div>
+	</div>
+
+	<div id="image-chooser">
+		<div class="menu">
+			<div class="cancel"> </div>
+			<div class="refresh"> </div>
+			<a href="https://dropbox.com/home" target="_blank"> Upload Image </a>
+			<div class="balancer"> </div>
+			<div class="balancer"> </div>
+		</div>
+		<!-- TODO cancel and refresh buttons -->
+		<div class="image-thumb-group">
+			<div class="image-thumb template"> </div>
+		</div>
+	</div>
+</body>
+</html>
